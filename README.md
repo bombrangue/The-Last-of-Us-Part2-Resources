@@ -9,7 +9,7 @@ This is an Auto Splitter script (ASL) for **The Last of Us Part II Remastered** 
 
 - **Game Time Integration**: Automatically removes loads and pauses + dead accurate with the In Game Timer.
 - **Mode Support**:
-  - **Main Game**: Full campaign runs with extensive split options (Chapters, Checkpoints, Restarts).
+  - **Main Game**: Full campaign runs with extensive split options (Chapters, Checkpoints, etc...).
   - **No Return**: Dedicated support for the rogue-like mode "No Return", splitting on encounters and score screens.
   - **Encounter Mode**: Specific splits for individual encounter practice.
 - **Smart Splitting**: Configurable to split on:
