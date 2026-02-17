@@ -1090,7 +1090,7 @@ update
         if (vars.PracticeTime == 0 && current.IGT != old.IGT && current.task != null && old.task != null && current.task != "" && old.task != "")
         {
             if (current.IGT < 1) {
-                vars.PracticeTime = 0;
+                vars.PracticeTime = 0.01;
             }
             else {
                 vars.PracticeTime = current.IGT;
@@ -1334,3 +1334,4 @@ gameTime
     return TimeSpan.FromSeconds(vars.adjustedTime);
 
 }
+
