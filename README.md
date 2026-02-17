@@ -25,14 +25,14 @@ This is an Auto Splitter script (ASL) for **The Last of Us Part II Remastered** 
 ## Installation
 
 1.  **Download and Place Files**:
-    - Place [TLOU2.asl](https://github.com/bombrangue/The-Last-of-Us-Part2-Resources/blob/main/TLOU2.asl) in your LiveSplit folder (or a subfolder).
+    - Place [TLOU2.asl](https://github.com/bombrangue/The-Last-of-Us-Part2-Resources/blob/main/TLOU2_Bombrangue-Version.asl) in your LiveSplit folder (or a subfolder).
 
 2.  **Configure LiveSplit**:
     - Open LiveSplit.
     - Right-click -> **Edit Layout**.
     - Click the **+** button -> **Control** -> **Scriptable Auto Splitter**.
     - Double-click the added **Scriptable Auto Splitter** component.
-    - Under **Script Path**, browse and select [TLOU2.asl](https://github.com/bombrangue/The-Last-of-Us-Part2-Resources/blob/main/TLOU2.asl).
+    - Under **Script Path**, browse and select [TLOU2.asl](https://github.com/bombrangue/The-Last-of-Us-Part2-Resources/blob/main/TLOU2_Bombrangue-Version.asl).
 
 3.  **Timing Method**:
     - The script will automatically detect if you are running in Real Time and prompt you to switch to **Game Time**.
