@@ -1089,7 +1089,12 @@ update
     {
         if (vars.PracticeTime == 0 && current.IGT != old.IGT && current.task != null && old.task != null && current.task != "" && old.task != "")
         {
-            vars.PracticeTime = current.IGT;
+            if (current.IGT < 1) {
+                vars.PracticeTime = 0;
+            }
+            else {
+                vars.PracticeTime = current.IGT;
+            }
             string baseId = current.task + "-" + vars.Funcs.ulongToHex(current.taskLvl3);
             vars.PracticeTask = baseId;
             vars.splitted.Add(baseId);   
@@ -1327,4 +1332,5 @@ isLoading
 gameTime
 {
     return TimeSpan.FromSeconds(vars.adjustedTime);
+
 }
