@@ -1286,7 +1286,7 @@ split
 reset
 {
     return 
-     (current.IGT == 0) && (current.task != null) && (current.task.Contains("efg-prologue-restring-a") || current.task.Contains("afd-abby-nature-alone"));
+     (current.IGT == 0) && (current.task != null) && (current.task.Contains("efg-prologue-restring-a") || current.task.Contains("afd-abby-nature-alone")) && current.savefile.Contains("less than");
      //print("---------RESET----------");
 }
 
