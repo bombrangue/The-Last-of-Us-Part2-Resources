@@ -67,6 +67,7 @@ startup
 {
     Assembly.Load(File.ReadAllBytes("Components/asl-help")).CreateInstance("Basic");
     vars.adjustedTime = 0.0;
+    vars.adjustedTime_calc = 0.0;
     vars.SpeedrunON = false;
     vars.PracticeTime = 0.0;
     vars.PracticeTask = "";
@@ -1065,7 +1066,7 @@ update
             (!current.savefile.Contains("NEW MANUAL SAVE")) && (!old.savefile.Contains("NEW MANUAL SAVE"))
         )
         {
-            vars.adjustedTime = 
+            vars.adjustedTime_calc = 
             (float)current.timechapter1/1000 + (float)current.timechapter2/1000 + (float)current.timechapter3/1000 +
             (float)current.timechapter4/1000 + (float)current.timechapter5/1000 + (float)current.timechapter6/1000 +
             (float)current.timechapter7/1000 + (float)current.timechapter8/1000 + (float)current.timechapter9/1000 +
@@ -1082,6 +1083,11 @@ update
             (float)current.timechapter40/1000 + (float)current.timechapter41/1000 + (float)current.timechapter42/1000 +
             (float)current.timechapter43/1000 + (float)current.timechapter44/1000 + (float)current.timechapter45/1000 +
             (float)current.timechapter46/1000 + current.IGT + 0.05;
+
+            if ( (vars.adjustedTime == 0.0) || (Math.Abs(vars.adjustedTime_calc - vars.adjustedTime) <= 30.0) )
+            {
+                vars.adjustedTime = vars.adjustedTime_calc;
+            }
         }
     }
 
