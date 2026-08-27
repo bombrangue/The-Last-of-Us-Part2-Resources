@@ -65,7 +65,6 @@ state("tlou-ii", "v1.6.10721.0105") //D49EA42E46CD4D884299D5B3581B5DC1
 
 startup
 {
-    Assembly.Load(File.ReadAllBytes("Components/asl-help")).CreateInstance("Basic");
     vars.adjustedTime = 0.0;
     vars.adjustedTime_calc = 0.0;
     vars.SpeedrunON = false;
@@ -1019,24 +1018,7 @@ startup
 
 init
 {
-    //print("----------------------INIT--------------------");
-    string md5 = "";
-    //vars.PracticeTime = 0;
-    //print("vars.PracticeTime : " + vars.PracticeTime.ToString() );
-    try {
-        md5 = (string)vars.Helper.GetMD5Hash();
-        //print("md5 : " + md5.ToString() );
-    } catch {
-        //print("Failed to open file for MD5 computation."); // Failed to open file for MD5 computation.
-    }
-    
-    switch (md5) {
-                case "D49EA42E46CD4D884299D5B3581B5DC1":  //1.6
-			version = "v1.6.10721.0105";
-            break;
-	}
-
-    //print("----------------------INIT--------------------");
+    version = "v1.6.10721.0105";
 }
 
 update
